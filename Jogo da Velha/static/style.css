@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+
+.jogo{
+    border-style: solid;
+    border-radius: 3px;
+    padding: 1px;
+    background-color: black;
+    margin: auto;
+    width:fit-content;
+}
+
+.caixa {
+    height: 60px;
+    width: 60px;
+    font-size: xxx-large;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 0px;
+    margin: 1px;
+    contain: layout;
+}
+
+#reiniciar {
+    margin: 5px;
+    cursor: pointer;
+}
