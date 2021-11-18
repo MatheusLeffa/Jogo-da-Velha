@@ -17,14 +17,16 @@ h1 {
 }
 
 .caixa {
-    height: 60px;
-    width: 60px;
-    font-size: xxx-large;
+    font-family: "Permanent Marker", cursive;
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
     cursor: pointer;
     border-style: solid;
     border-radius: 0px;
     margin: 1px;
     contain: layout;
+    line-height: 0;
 }
 
 #reiniciar {
