@@ -46,6 +46,246 @@ function jogada(posição) {
 
 function cpuLogic() {
     if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[0] == "X" && espacos[8] == "X") {
+            if (document.getElementById("4").innerHTML == "") {
+                document.getElementById("4").innerHTML = "O";
+                espacos[4] = document.getElementById("4").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[2] == "X" && espacos[6] == "X") {
+            if (document.getElementById("4").innerHTML == "") {
+                document.getElementById("4").innerHTML = "O";
+                espacos[4] = document.getElementById("4").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[0] == "X" && espacos[2] == "X") {
+            if (document.getElementById("1").innerHTML == "") {
+                document.getElementById("1").innerHTML = "O";
+                espacos[1] = document.getElementById("1").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[3] == "X" && espacos[5] == "X") {
+            if (document.getElementById("4").innerHTML == "") {
+                document.getElementById("4").innerHTML = "O";
+                espacos[4] = document.getElementById("4").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[6] == "X" && espacos[8] == "X") {
+            if (document.getElementById("7").innerHTML == "") {
+                document.getElementById("7").innerHTML = "O";
+                espacos[7] = document.getElementById("7").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[0] == "X" && espacos[6] == "X") {
+            if (document.getElementById("3").innerHTML == "") {
+                document.getElementById("3").innerHTML = "O";
+                espacos[3] = document.getElementById("3").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[1] == "X" && espacos[7] == "X") {
+            if (document.getElementById("4").innerHTML == "") {
+                document.getElementById("4").innerHTML = "O";
+                espacos[4] = document.getElementById("4").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[2] == "X" && espacos[8] == "X") {
+            if (document.getElementById("5").innerHTML == "") {
+                document.getElementById("5").innerHTML = "O";
+                espacos[5] = document.getElementById("5").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[0] == "X" && espacos[4] == "X") {
+            if (document.getElementById("8").innerHTML == "") {
+                document.getElementById("8").innerHTML = "O";
+                espacos[8] = document.getElementById("8").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[2] == "X" && espacos[4] == "X") {
+            if (document.getElementById("6").innerHTML == "") {
+                document.getElementById("6").innerHTML = "O";
+                espacos[6] = document.getElementById("6").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[6] == "X" && espacos[4] == "X") {
+            if (document.getElementById("2").innerHTML == "") {
+                document.getElementById("2").innerHTML = "O";
+                espacos[2] = document.getElementById("2").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[8] == "X" && espacos[4] == "X") {
+            if (document.getElementById("0").innerHTML == "") {
+                document.getElementById("0").innerHTML = "O";
+                espacos[0] = document.getElementById("0").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[0] == "X" && espacos[3] == "X") {
+            if (document.getElementById("6").innerHTML == "") {
+                document.getElementById("6").innerHTML = "O";
+                espacos[6] = document.getElementById("6").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[1] == "X" && espacos[4] == "X") {
+            if (document.getElementById("7").innerHTML == "") {
+                document.getElementById("7").innerHTML = "O";
+                espacos[7] = document.getElementById("7").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[2] == "X" && espacos[5] == "X") {
+            if (document.getElementById("8").innerHTML == "") {
+                document.getElementById("8").innerHTML = "O";
+                espacos[8] = document.getElementById("8").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[6] == "X" && espacos[3] == "X") {
+            if (document.getElementById("0").innerHTML == "") {
+                document.getElementById("0").innerHTML = "O";
+                espacos[0] = document.getElementById("0").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[7] == "X" && espacos[4] == "X") {
+            if (document.getElementById("1").innerHTML == "") {
+                document.getElementById("1").innerHTML = "O";
+                espacos[1] = document.getElementById("1").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[8] == "X" && espacos[5] == "X") {
+            if (document.getElementById("2").innerHTML == "") {
+                document.getElementById("2").innerHTML = "O";
+                espacos[2] = document.getElementById("2").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[0] == "X" && espacos[1] == "X") {
+            if (document.getElementById("2").innerHTML == "") {
+                document.getElementById("2").innerHTML = "O";
+                espacos[2] = document.getElementById("2").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }    
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[3] == "X" && espacos[4] == "X") {
+            if (document.getElementById("5").innerHTML == "") {
+                document.getElementById("5").innerHTML = "O";
+                espacos[5] = document.getElementById("5").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }    
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[6] == "X" && espacos[7] == "X") {
+            if (document.getElementById("8").innerHTML == "") {
+                document.getElementById("8").innerHTML = "O";
+                espacos[8] = document.getElementById("8").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[2] == "X" && espacos[1] == "X") {
+            if (document.getElementById("0").innerHTML == "") {
+                document.getElementById("0").innerHTML = "O";
+                espacos[0] = document.getElementById("0").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[5] == "X" && espacos[4] == "X") {
+            if (document.getElementById("3").innerHTML == "") {
+                document.getElementById("3").innerHTML = "O";
+                espacos[3] = document.getElementById("3").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
+        if (espacos[8] == "X" && espacos[7] == "X") {
+            if (document.getElementById("6").innerHTML == "") {
+                document.getElementById("6").innerHTML = "O";
+                espacos[6] = document.getElementById("6").innerHTML
+                jogadas++;
+                vez_jogador++;
+            }
+        }
+    }
+    if (vez_jogador % 2 == 1 && jogadas < 9) {
         let teste = true;
         do {
             jogadaCpu = Math.round(Math.random() * 8);
@@ -59,6 +299,7 @@ function cpuLogic() {
         } while (teste && jogadas < 9)
     }
 }
+
 
 function tem_vencedor() {
     if ((espacos[0] == espacos[1] && espacos[1] == espacos[2]) && espacos[0, 1, 2] != undefined) {
