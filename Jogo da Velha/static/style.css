@@ -5,6 +5,8 @@ body {
 
 h1 {
     color: white;
+    font-family: cursive;
+    text-shadow: 3px 1px 0px #950707;
 }
 
 .jogo{
@@ -32,4 +34,8 @@ h1 {
 #reiniciar {
     margin: 5px;
     cursor: pointer;
+}
+
+#gameplaylabel {
+    color: white;
 }
