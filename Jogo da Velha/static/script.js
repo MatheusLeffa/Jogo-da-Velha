@@ -12,8 +12,6 @@ function updateGameMode() {
     modoDeJogo = option.value;
 }
 
-
-
 function jogada(posição) {
     if (modoDeJogo == "mp") {
         if (document.getElementById(posição).innerHTML != "") {
