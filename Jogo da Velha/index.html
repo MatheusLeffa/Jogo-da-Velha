@@ -13,7 +13,12 @@
 
 <body>
     <header>
-        <h1>Jogo da véia</h1>
+        <h1>Jogo da Velha</h1>
+        <label for="gameplay" id="gameplaylabel">Modo de Jogo:</label>
+        <select id="gameplay" onchange="updateGameMode()">
+            <option value="sp" selected>Single-Player</option>
+            <option value="mp">Multi-Player</option>
+        </select>
         <button id="reiniciar" onclick="reinicia()">Reiniciar</button>
     </header>
     <section class="jogo">
