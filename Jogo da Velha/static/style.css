@@ -5,8 +5,11 @@ body {
 
 h1 {
     color: white;
-    font-family: cursive;
-    text-shadow: 3px 1px 0px #950707;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 5px 0px 7px #5f0606;
+    font-size: 60px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
 }
 
 .jogo{
