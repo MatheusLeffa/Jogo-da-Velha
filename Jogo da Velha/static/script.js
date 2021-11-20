@@ -13,33 +13,37 @@ function updateGameMode() {
 }
 
 function jogada(posição) {
-    if (modoDeJogo == "mp") {
-        if (document.getElementById(posição).innerHTML != "") {
-            return
-        } else {
-            if (vez_jogador == 0 || vez_jogador % 2 == 0) {
-                document.getElementById(posição).innerHTML = "X"
-            } else {
-                document.getElementById(posição).innerHTML = "O"
-            }
-            jogadas++;
-            vez_jogador++
-            espacos[posição] = document.getElementById(posição).innerHTML
-            tem_vencedor()
-        }
+    if (jogadas == 0 && document.getElementById(posição).value == "4") {
+        alert("Não pode começar no meio!")
     } else {
-        if (document.getElementById(posição).innerHTML != "") {
-            return
-        } else {
-            if (vez_jogador == 0 || vez_jogador % 2 == 0) {
-                document.getElementById(posição).innerHTML = "X";
-                espacos[posição] = document.getElementById(posição).innerHTML;
+        if (modoDeJogo == "mp") {
+            if (document.getElementById(posição).innerHTML != "") {
+                return
+            } else {
+                if (vez_jogador == 0 || vez_jogador % 2 == 0) {
+                    document.getElementById(posição).innerHTML = "X"
+                } else {
+                    document.getElementById(posição).innerHTML = "O"
+                }
                 jogadas++;
-                vez_jogador++;
+                vez_jogador++
+                espacos[posição] = document.getElementById(posição).innerHTML
+                tem_vencedor()
+            }
+        } else {
+            if (document.getElementById(posição).innerHTML != "") {
+                return
+            } else {
+                if (vez_jogador == 0 || vez_jogador % 2 == 0) {
+                    document.getElementById(posição).innerHTML = "X";
+                    espacos[posição] = document.getElementById(posição).innerHTML;
+                    jogadas++;
+                    vez_jogador++;
+                    tem_vencedor();
+                }
+                cpuLogic();
                 tem_vencedor();
             }
-            cpuLogic();
-            tem_vencedor();
         }
     }
 }
@@ -234,7 +238,7 @@ function cpuLogic() {
                 vez_jogador++;
             }
         }
-    }    
+    }
     if (vez_jogador % 2 == 1 && jogadas < 9) {
         if (espacos[3] == "X" && espacos[4] == "X") {
             if (document.getElementById("5").innerHTML == "") {
@@ -244,7 +248,7 @@ function cpuLogic() {
                 vez_jogador++;
             }
         }
-    }    
+    }
     if (vez_jogador % 2 == 1 && jogadas < 9) {
         if (espacos[6] == "X" && espacos[7] == "X") {
             if (document.getElementById("8").innerHTML == "") {
