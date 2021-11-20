@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Permanent+Marker&display=swap');
+
 body {
     text-align: center;
     background-color: rgb(46, 45, 45);
@@ -22,15 +24,14 @@ h1 {
 }
 
 .caixa {
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Coming Soon', cursive;
     height: 100px;
     width: 100px;
-    font-size: 80px;
+    font-size: 120px;
     cursor: pointer;
     border-style: solid;
-    border-radius: 0px;
     margin: 1px;
-    contain: layout;
+    contain: content;
     line-height: 0;
 }
 
