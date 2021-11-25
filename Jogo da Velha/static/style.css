@@ -1,10 +1,18 @@
+/*
+Cesuca 2021 
+Matheus Leffa Hilbert, Eduardo Fofonka Melo 
+*/
+
+/* Importa fontes para Titulo e "X" e "O" do jogo */
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Permanent+Marker&display=swap');
 
+/* Estilo corpo do texto */
 body {
     text-align: center;
     background-color: rgb(46, 45, 45);
 }
 
+/* Estilo do titulo */
 h1 {
     color: white;
     font-family: 'Permanent Marker', cursive;
@@ -14,6 +22,7 @@ h1 {
     -webkit-text-stroke-color: #000;
 }
 
+/* Estilo do jogo em si */
 .jogo{
     border-style: solid;
     border-radius: 3px;
@@ -23,6 +32,7 @@ h1 {
     width:fit-content;
 }
 
+/* Estilo das caixas de seleção "x" e "o" */
 .caixa {
     font-family: 'Coming Soon', cursive;
     height: 100px;
@@ -35,11 +45,13 @@ h1 {
     line-height: 0;
 }
 
+/* Estilo do botão reiniciar */
 #reiniciar {
     margin: 5px;
     cursor: pointer;
 }
 
+/* Estilo da seleção de modo de jogo */
 #gameplaylabel {
     color: white;
 }

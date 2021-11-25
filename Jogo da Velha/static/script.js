@@ -1,3 +1,6 @@
+// Cesuca 2021 
+// Matheus Leffa Hilbert, Eduardo Fofonka Melo
+
 // {VARIÁVEIS DE CONTROLE}
 var vez_jogador = 0
 var espacos = []
@@ -5,15 +8,16 @@ var jogadas = 0;
 var jogadaCpu;
 var modoDeJogo;
 
-// {MODO DE JOGO}
+// Função que seleciona o modo de jogo.
 function updateGameMode() {
     let select = document.getElementById('gameplay');
     let option = select.options[select.selectedIndex];
     modoDeJogo = option.value;
 }
 
+// Controla quem irá jogar, e suas jogadas, conforme o modo de jogo.
 function jogada(posição) {
-    if (modoDeJogo == "mp") {
+    if (modoDeJogo == "mp") { // Se o modo de jogo for Multi-player, executa este trecho de código.
         if (document.getElementById(posição).innerHTML != "") {
             return
         } else {
@@ -27,7 +31,7 @@ function jogada(posição) {
             espacos[posição] = document.getElementById(posição).innerHTML
             tem_vencedor()
         }
-    } else {
+    } else { // Se não for Multi-player, executa este trecho de código para Single-player.
         if (document.getElementById(posição).innerHTML != "") {
             return
         } else {
@@ -44,6 +48,7 @@ function jogada(posição) {
     }
 }
 
+// Toda lógica da cpu que verifica as possibilidades de vitória do player e contra-ataca.
 function cpuLogic() {
     if (espacos[0] == "x" && espacos[8] == "x") cpuResposta(0,8,4);
     if (espacos[2] == "x" && espacos[6] == "x") cpuResposta(2,6,4);
@@ -69,6 +74,7 @@ function cpuLogic() {
     if (espacos[2] == "x" && espacos[1] == "x") cpuResposta(2,1,0);
     if (espacos[5] == "x" && espacos[4] == "x") cpuResposta(5,4,3);
     if (espacos[8] == "x" && espacos[7] == "x") cpuResposta(8,7,6);
+    // Caso não haja nenhuma defesa válida escolhe aleatoriamente uma posição
     if (vez_jogador % 2 == 1 && jogadas < 9) {
         let teste = true;
         do {
@@ -83,7 +89,7 @@ function cpuLogic() {
         } while (teste && jogadas < 9)
     }
 }
-
+// Recebe as posições que contém uma possibilidade de vitória e coloca o valor para impedir
 function cpuResposta(posicao1, posicao2, resposta) {
     if (vez_jogador % 2 == 1 && jogadas < 9) {
         if (espacos[posicao1] == "x" && espacos[posicao2] == "x") {
@@ -97,6 +103,7 @@ function cpuResposta(posicao1, posicao2, resposta) {
     }
 }
 
+// Verifica todas as possibilidades em que pode haver um vencedor retornando um alert caso alguém tenha vencido 
 function tem_vencedor() {
     if ((espacos[0] == espacos[1] && espacos[1] == espacos[2]) && espacos[0, 1, 2] != undefined) {
         alert("O jogador " + espacos[0] + " foi o vencedor!!")
@@ -132,6 +139,7 @@ function tem_vencedor() {
     }
 }
 
+// Reinicia o jogo e zera todas as variáveis de controle
 function reinicia() {
     for (let i = 0; i <= 8; i++) {
         document.getElementById(i).innerHTML = "";

@@ -1,3 +1,6 @@
+<!-- Cesuca 2021 -->
+<!-- Matheus Leffa Hilbert, Eduardo Fofonka Melo -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,13 +8,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--favicon -->
     <link rel="stylesheet" href="static/style.css">
     <script src="static/script.js"></script>
     <title>Jogo da velha</title>
 </head>
 
 <body>
+    <!-- Cabeçalho que contém a estrutura para escolher o modo de jogo, o título e o botão reiniciar -->
     <header>
         <h1>Jogo da Velha</h1>
         <label for="gameplay" id="gameplaylabel">Modo de Jogo:</label>
@@ -21,13 +25,14 @@
         </select>
         <button id="reiniciar" onclick="reinicia()">Reiniciar</button>
     </header>
+    <!-- Sessão referente ao jogo -->
     <section class="jogo">
         <button class="caixa" id="0" onclick="jogada(0)"></button>
         <button class="caixa" id="1" onclick="jogada(1)"></button>
         <button class="caixa" id="2" onclick="jogada(2)"></button>
         <br>
         <button class="caixa" id="3" onclick="jogada(3)"></button>
-        <button class="caixa" id="4" value="4" onclick="jogada(4)"></button>
+        <button class="caixa" id="4" onclick="jogada(4)"></button>
         <button class="caixa" id="5" onclick="jogada(5)"></button>
         <br>
         <button class="caixa" id="6" onclick="jogada(6)"></button>
