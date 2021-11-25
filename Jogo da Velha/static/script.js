@@ -7,8 +7,8 @@ var modoDeJogo;
 
 // {MODO DE JOGO}
 function updateGameMode() {
-    var select = document.getElementById('gameplay');
-    var option = select.options[select.selectedIndex];
+    let select = document.getElementById('gameplay');
+    let option = select.options[select.selectedIndex];
     modoDeJogo = option.value;
 }
 
