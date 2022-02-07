@@ -1,4 +1,4 @@
-# Jogo da Velha
+# Jogo da Velha - TicTacToe
 Trabalho de Algoritmos e Programação.
 
 Feito em dupla com @EduardoFofonka.
